@@ -25,7 +25,7 @@ li {
 
 .wrapper{
     max-width: 960px;
-    margin: 0 auto 130px auto;
+    margin: 0 auto 120px auto;
     padding: 0 4%;
     font-size: 0.9em;
 }
@@ -35,14 +35,14 @@ li {
     text-align: center;
     margin-bottom: 50px;
     font-size: 25px;
-    font-weight: normal;
 }
 
 
 /* ヘッダー */
 header {
     height: 250px;
-    margin: 0 50px;
+    margin: 0 15%;
+    padding: 0 4%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -60,6 +60,7 @@ header li {
 
 header li a {
     color: #24292e;
+    font-size: 0.9em;
 }
 
 header li a:hover {
@@ -75,7 +76,7 @@ header li img.icon {
 
 /*  トップ画像 */
 #mainvisual {
-    margin-bottom: 50px;
+    margin-bottom: 70px;
 }
 
 #mainvisual img {
@@ -89,12 +90,16 @@ header li img.icon {
     margin-bottom: 20px;
 }
 
+#about li {
+    line-height: 1.8em;
+}
+
 #about li:first-child {
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 #about p {
-    text-align: center;
+    text-align: left;
 }
 
 /* Works */
@@ -106,7 +111,7 @@ header li img.icon {
 
 #works li {
     width: 30%;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 /* News */
@@ -135,18 +140,23 @@ header li img.icon {
 }
 
 /* Contact */
+#contact * {
+    box-sizing: border-box;
+}
+
 #contact dl {
     display: flex;
     flex-wrap: wrap;
 }
 
 #contact dt {
-    width: 20%;
+    width: 15%;
     margin: 0;
+    padding-left: 20px;
 }
 
 #contact dd {
-    width: 80%;
+    width: 85%;
     margin: 0 0 10px 0;
 }
 
@@ -155,6 +165,11 @@ header li img.icon {
     width: 100%;
     border: solid 1px #999;
     padding: 10px;
+}
+
+#contact dd input:focus,
+#contact dd textarea:focus {
+    outline: none;
 }
 
 #contact dd textarea {
@@ -168,11 +183,11 @@ header li img.icon {
 }
 
 #contact .button input {
-    width: 200px;
+    width: 180px;
     background-color: #333;
     color: #fff;
     border: solid 1px #333;
-    padding: 20px;
+    padding: 15px;
 }
 
 #contact .button input:hover{
@@ -191,4 +206,77 @@ footer {
 
 footer p {
     color: #fff;
+    font-size: 0.6em;
+}
+
+@media screen and (max-width:400px) {
+
+    header {
+        flex-direction: column;
+        height: 200px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header li:first-child {
+        margin-left: 0;
+    }
+
+    header li img.icon {
+        max-width: 20px;
+        padding: auto;
+    }
+
+    picture {
+        display: flex;
+        justify-content: center;
+    }
+
+    #mainvisual img {
+        width: 100%;
+    }
+
+    .wrapper {
+        margin-bottom: 60px;
+    }
+
+    #works ul {
+        flex-direction: column;
+    }
+
+    #works li {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    #news dl {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #news dt {
+        padding-bottom: 0;
+        border-bottom: none;
+        width: 100%;
+    }
+
+    #news dd {
+        padding-top: 0;
+        width: 100%;
+    }
+
+    #contact dl {
+        flex-direction: column;
+    }
+
+    #contact dt {
+        padding: 0;
+        width: 100%;
+        text-align: left;
+    }
+
+    #contact dd {
+        width: 100%;
+    }
+
 }
