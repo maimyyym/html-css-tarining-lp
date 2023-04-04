@@ -209,6 +209,9 @@ footer p {
     font-size: 0.6em;
 }
 
+
+
+/* レスポンシブ */
 @media screen and (max-width:400px) {
 
     header {
