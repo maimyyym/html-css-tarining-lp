@@ -1,16 +1,22 @@
 
 /* 共通部分 */
 body {
-    color: #999;
+    color: #24292e;
+    margin: 0;
 }
 
 a {
-    color: black;
+    text-decoration: none;
 }
 
 img {
     max-width: 100%;
 }
+
+ul {
+    padding: 0;
+}
+
 
 li {
     list-style: none;
@@ -18,13 +24,17 @@ li {
 
 
 .wrapper{
-    margin: 0 30px 50px;
-    padding: 0 20px;
+    max-width: ;
+    margin: 0 auto 130px auto;
+    padding: 0 4%;
 }
+
 
 .section-title {
     text-align: center;
     margin-bottom: 50px;
+    font-size: 25px;
+    font-weight: normal;
 }
 
 
@@ -37,13 +47,30 @@ header {
     justify-content: space-between;
 }
 
+
 header ul {
     display: flex;
+    font-size: 1em;
 }
 
 header li {
     margin-left: 20px;
 }
+
+header li a {
+    color: #24292e;
+}
+
+header li a:hover {
+    opacity: 0.7;
+}
+
+header li img.icon {
+    max-width: 100%;
+    height: auto;
+    width: 1.5em;
+}
+
 
 /*  トップ画像 */
 #mainvisual {
@@ -51,20 +78,22 @@ header li {
 }
 
 #mainvisual img {
-    height: 400px;
+    height: 420px;
+    /* max-width:  1454px; */
+    object-fit: cover;
 }
 
 /* About */
 #about ul {
-
+    margin-bottom: 20px;
 }
 
-#about li {
-
+#about li:first-child {
+    padding-bottom: 10px;
 }
 
 #about p {
-
+    text-align: center;
 }
 
 /* Works */
@@ -93,6 +122,7 @@ header li {
 
 #news dd {
     width: 80%;
+    margin: 0;
     border-bottom: solid 1px #999;
 }
 
@@ -103,32 +133,54 @@ header li {
 }
 
 #contact dt {
-    width: 15%;
+    width: 20%;
+    margin: 0;
 }
 
 #contact dd {
-    width: 85%;
+    width: 80%;
+    margin: 0 0 10px 0;
 }
 
 #contact dd input,
 #contact dd textarea {
-
+    width: 100%;
+    border: solid 1px #999;
+    padding: 10px;
 }
 
-#contact .bottun {
-
+#contact dd textarea {
+    height: 100px;
 }
 
-#contact .bottun input {
+#contact .button {
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+}
 
+#contact .button input {
+    width: 200px;
+    background-color: #333;
+    color: #fff;
+    border: solid 1px #333;
+    padding: 20px;
+}
+
+#contact .button input:hover{
+    background-color: #fff;
+    color: #333;
 }
 
 
 footer {
     display: flex;
     justify-content: center;
+    align-items: center;
+    background-color: #333;
+    height: 2em;
 }
 
 footer p {
-
+    color: #fff;
 }
