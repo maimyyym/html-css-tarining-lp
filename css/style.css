@@ -1,0 +1,134 @@
+
+/* 共通部分 */
+body {
+    color: #999;
+}
+
+a {
+    color: black;
+}
+
+img {
+    max-width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+
+.wrapper{
+    margin: 0 30px 50px;
+    padding: 0 20px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+/* ヘッダー */
+header {
+    height: 250px;
+    margin: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header ul {
+    display: flex;
+}
+
+header li {
+    margin-left: 20px;
+}
+
+/*  トップ画像 */
+#mainvisual {
+    margin-bottom: 50px;
+}
+
+#mainvisual img {
+    height: 400px;
+}
+
+/* About */
+#about ul {
+
+}
+
+#about li {
+
+}
+
+#about p {
+
+}
+
+/* Works */
+#works ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#works li {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+/* News */
+#news dl {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: solid 1px #999;
+}
+
+#news dt {
+    width: 20%;
+    border-bottom: solid 1px #999;
+}
+
+#news dd {
+    width: 80%;
+    border-bottom: solid 1px #999;
+}
+
+/* Contact */
+#contact dl {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#contact dt {
+    width: 15%;
+}
+
+#contact dd {
+    width: 85%;
+}
+
+#contact dd input,
+#contact dd textarea {
+
+}
+
+#contact .bottun {
+
+}
+
+#contact .bottun input {
+
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer p {
+
+}
